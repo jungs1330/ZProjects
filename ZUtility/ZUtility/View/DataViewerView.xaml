@@ -1,0 +1,91 @@
+﻿<UserControl x:Class="ZUtility.View.DataViewerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <Style x:Key="BigFontButtonStyle">
+            <Setter Property="Control.FontFamily" Value="Times New Roman" />
+            <Setter Property="Control.FontSize" Value="14" />
+            <Setter Property="Control.FontWeight" Value="Bold" />
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <DockPanel LastChildFill="True">
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+                <Label>Database:</Label>
+                <ComboBox Width="300" ItemsSource="{Binding Path=DatabaseList}" SelectedValue="{Binding Path=Database}">
+                    <ComboBox.ItemContainerStyle>
+                        <Style TargetType="{x:Type ComboBoxItem}">
+                            <Setter Property="Background" Value="LightSteelBlue" />
+                            <Setter Property="Margin" Value="2" />
+                            <Setter Property="Padding" Value="2" />
+                            <Style.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="Background" Value="DarkRed" />
+                                    <Setter Property="Foreground" Value="White" />
+                                    <Setter Property="BorderBrush" Value="Black" />
+                                    <Setter Property="BorderThickness" Value="1" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ComboBox.ItemContainerStyle>
+                </ComboBox>
+                <Label>DB Objects:</Label>
+                <ComboBox Width="300" DisplayMemberPath="CollectionName" SelectedValuePath="CollectionName" ItemsSource="{Binding Path=DatabaseObjects}" SelectedValue="{Binding Path=DatabaseObject}"/>
+            </StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="350"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <DockPanel Grid.Column="0" LastChildFill="True">
+                    <DockPanel DockPanel.Dock="Top" LastChildFill="True">
+                        <Button DockPanel.Dock="Right" Command="{Binding ClearFilterCommand}">Clear</Button>
+                        <Button DockPanel.Dock="Right" Command="{Binding FilterCommand}">Filter</Button>
+                        <ComboBox DockPanel.Dock="Left" ItemsSource="{Binding Path=ItemColumnList}" DisplayMemberPath="ColumnName" SelectedValuePath="ColumnName" SelectedValue="{Binding Path=FilterColumn}" Width="100"></ComboBox>
+                        <TextBox Text="{Binding Path=FilterString, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                    </DockPanel>
+                    <DataGrid HorizontalScrollBarVisibility="Visible" ItemsSource="{Binding Path=ItemListView}" SelectedItem="{Binding Path=SelectedTable}"></DataGrid>
+                </DockPanel>
+                <GridSplitter Grid.Column="1" Width="3" HorizontalAlignment="Center" VerticalAlignment="Stretch" ShowsPreview="True" />
+                <Grid Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <GroupBox Grid.Column="0" Grid.Row="0" Header="Schema">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="2*"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Label Grid.Row="0">Columns</Label>
+                            <DataGrid Grid.Row="1" ItemsSource="{Binding Path=ColumnList}"></DataGrid>
+                            <GridSplitter Grid.Row="2" Height="3" HorizontalAlignment="Stretch" VerticalAlignment="Center" ShowsPreview="True" />
+                            <Label Grid.Row="3">Index</Label>
+                            <DataGrid Grid.Row="4" ItemsSource="{Binding Path=IndexList}"></DataGrid>
+                        </Grid>
+                    </GroupBox>
+                    <GridSplitter Grid.Column="0" Grid.Row="1" Height="3" HorizontalAlignment="Stretch" VerticalAlignment="Center" ShowsPreview="True" />
+                    <GroupBox Grid.Column="0" Grid.Row="2" Header="Data">
+                        <DockPanel LastChildFill="True" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+                                <Label># of Rows:</Label>
+                                <TextBox Width="100" Text="{Binding Path=RowCount}"></TextBox>
+                                <Button Style="{StaticResource BigFontButtonStyle}" Command="{Binding RefreshCommand}">Refresh</Button>
+                            </StackPanel>
+                            <DataGrid ItemsSource="{Binding Path=DataList}"></DataGrid>
+                        </DockPanel>
+                    </GroupBox>
+                </Grid>
+            </Grid>
+        </DockPanel>
+    </Grid>
+</UserControl>

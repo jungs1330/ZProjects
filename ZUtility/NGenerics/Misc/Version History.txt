@@ -1,0 +1,114 @@
+1.2
+---
+	- Added Stuff:
+		- ObjectMatrix
+		- HashList
+		- RedBlackTree
+		- Prim's Minimal Spanning Tree Algorithm
+		- ReadOnlyPropertyList
+		
+	- Changed Stuff :
+		- Graph's AddVertex(T item) and AddEdge(Vertex<T> v1, Vertex<T> v2) now return the newly created vertex and
+		  edge, respectively.			
+		- Extracted Interfaces IMathematicalMatrix and IMatrix for Matrix type structures
+		- Added ToKeyValuePair() Method on Association class.
+		- Converted the BinarySearchTree<T> to BinarySearchTree<TKey, TValue> :  It now implements
+		  the IVisitableDictionary<TKey, TValue> interface. 
+		- VisitableList<T> and GeneralTree<T> now implements ISortable<T> and ISortable<GeneralTree<T>> respectively.
+		- Methods added to the ISorter<T> and ISortable<T> interfaces to allow sorting with a Comparison<T> delegate.		
+		- InterchangeRows, InterchangeColumns, GetRow, GetColumn, AddColumn, AddRow  added on IMAtrix, Matrix and ObjectMatrix		
+		- Added Parent property to GeneralTree<T> so bottom-up paths can be found.
+		- Added Ancestors property to GeneralTree<T> to find any ancestors of the current node up in the tree.
+	  
+1.1
+---
+	- In an effort to take this project one step further, DataStructures.NET has received a bit of a face-lift, and is 
+	  now dubbed NGenerics.  The project page can be found at http://www.codeplex.com/NGenerics. The latest source can
+	  be found on the project page, but it will be periodically updated at Code Project.
+	  
+	  As such, major changes have been made :
+		- The default namespace has been changed to NGenerics.
+		- The strong name key for signing the assembly has been changed and is no longer distributed with the library.
+		  This means that if you want to compile NGenerics from source, you need to provide your own key 
+		  (or turn off signing for the assembly).
+		  
+	  Hopefully this will be the last major change - things should settle down now...
+	  
+	- Added Stuff :
+		- DataStructures :
+			- BinarySearchTree
+		- Algorithms :
+			- Euclid's Algorithm
+			
+	- Changed Stuff :
+		- Added FindNode method to BinaryTree, GeneralTree and the ITree<T> interface.
+		- Changed the IsSymmetric method of the Matrix to not make a transposition of the current matrix.
+		- Extracted interface for Matrix : IMatrix
+		- Added Methods/Properties to Matrix :
+			- IsSquare
+			- GetSubMatrix
+			- Clone (Matrix now implements IClonable)
+
+1.0 Release
+-----------
+	- Fixed :
+		- Spelling mistake : BreathFirstSearch on GeneralTree and BinaryTree instead of BreadthFirstSearch.		
+		
+	- Added Stuff :
+		- Sorters :
+			- CombSorter
+			- CocktailSorter
+			- OddEvenTransportSorter 
+			- ShakerSorter		
+		- DataStructures :
+			- SkipList
+		- Algorithms :
+			- Djikstra's shortest path algorithm
+	
+	- Changed Stuff :
+		- Changed PriorityQueue to take a PriorityQueueType parameter on 
+		  construction, to specify whether it's a min priority queue or
+	      a max priority queue.
+	    - Split the IVisitable portion from the IVisitableCollection interface,
+	      and introduced the IVisitableDictionary interface.	 
+	    - Added a Weight field on the Vertex<T> class to accommodate vertex-weighted graphs.
+	
+
+1.0 Beta 2
+----------
+	- Graph data structure added.
+	- Modified Singleton to have an internal setter for testing purposes,
+	  as per M.Holmgren's  suggestion.
+	- Heap now takes a HeapType parameter at construction to specify whether
+	  it's a MinHeap or a MaxHeap.
+	- Priority Queue is now implemented using a MaxHeap instead of a SortedList,
+	  thanks to a suggestion by CastorTiu.
+	- Removed the abstract VisitableCollection class.  All datastructures now
+	  implement the IVisitableCollection interface instead of inheriting from
+	  the abstract VisitableCollection class.  While this does force the 
+	  implementation  a couple of mundane methods multiple times, I feel that 
+	  the interface is a much cleaner approach, since I can now "hide" methods 
+	  through explicit implementation instead of just throwing a 
+	  NotSupportedException.
+	- SortedList now implements IList<T>.
+	- Removed Visitor abstract class - all visitors now implement the IVisitor<T>
+	  interface and the Accept method on the IVisitableCollection<T> interface
+	  now takes a IVisitor<T> parameter.
+	- Extracted interfaces for the following data structures :
+		- IDeque for the Deque class.
+		- IBag for the Bag class.
+		- ISet for the Pascalset class.
+		- IStack for the VisitableStack class.
+		- ITree interface for the BinaryTree and GeneralTree classes.
+		- IHeap interface for the Heap class.
+		
+	- Added Sorters :
+		- ShellSorter
+		- QuickSorter
+		- BucketSorter
+	
+
+1.0 Beta 1
+----------
+
+Initial Release

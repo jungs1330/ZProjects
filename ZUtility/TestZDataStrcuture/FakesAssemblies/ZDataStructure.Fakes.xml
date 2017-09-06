@@ -1,0 +1,1151 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ZDataStructure.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:ZDataStructure.Fakes.ShimSearch`1">
+            <summary>Shim type of ZDataStructure.Search`1</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimSearch`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimSearch`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimSearch`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimSearch`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimSearch`1.BinarySearchListOfT0T0">
+            <summary>Sets the shim of Search`1.BinarySearch(List`1&lt;!0&gt; list, !0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimSearch`1.BinarySearchListOfT0T0Int32Int32">
+            <summary>Sets the shim of Search`1.BinarySearch(List`1&lt;!0&gt; list, !0 data, Int32 start, Int32 end)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimSearch`1.InterpolationSearchListOfInt32Int32">
+            <summary>Sets the shim of Search`1.InterpolationSearch(List`1&lt;Int32&gt; list, Int32 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimSearch`1.LinearSearchListOfT0T0">
+            <summary>Sets the shim of Search`1.LinearSearch(List`1&lt;!0&gt; list, !0 data)</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.ShimZBinarySearchTree`1">
+            <summary>Shim type of ZDataStructure.ZBinarySearchTree`1</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZBinarySearchTree`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZBinarySearchTree`1.#ctor(ZDataStructure.ZBinarySearchTree{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZBinarySearchTree`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZBinarySearchTree`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinarySearchTree`1.AddT0">
+            <summary>Sets the shim of ZBinarySearchTree`1.Add(!0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinarySearchTree`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinarySearchTree`1.Constructor">
+            <summary>Sets the shim of ZBinarySearchTree`1.ZBinarySearchTree`1()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinarySearchTree`1.DeleteT0">
+            <summary>Sets the shim of ZBinarySearchTree`1.Delete(!0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinarySearchTree`1.FindMaxZBinaryTreeNodeOfT0">
+            <summary>Sets the shim of ZBinarySearchTree`1.FindMax(ZBinaryTreeNode`1&lt;!0&gt; node)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinarySearchTree`1.FindMinZBinaryTreeNodeOfT0">
+            <summary>Sets the shim of ZBinarySearchTree`1.FindMin(ZBinaryTreeNode`1&lt;!0&gt; node)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinarySearchTree`1.FindParentT0">
+            <summary>Sets the shim of ZBinarySearchTree`1.FindParent(!0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinarySearchTree`1.FindT0">
+            <summary>Sets the shim of ZBinarySearchTree`1.Find(!0 data)</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.ShimZBinarySearchTree`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinarySearchTree`1.AllInstances.AddT0">
+            <summary>Sets the shim of ZBinarySearchTree`1.Add(!0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinarySearchTree`1.AllInstances.DeleteT0">
+            <summary>Sets the shim of ZBinarySearchTree`1.Delete(!0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinarySearchTree`1.AllInstances.FindMaxZBinaryTreeNodeOfT0">
+            <summary>Sets the shim of ZBinarySearchTree`1.FindMax(ZBinaryTreeNode`1&lt;!0&gt; node)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinarySearchTree`1.AllInstances.FindMinZBinaryTreeNodeOfT0">
+            <summary>Sets the shim of ZBinarySearchTree`1.FindMin(ZBinaryTreeNode`1&lt;!0&gt; node)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinarySearchTree`1.AllInstances.FindParentT0">
+            <summary>Sets the shim of ZBinarySearchTree`1.FindParent(!0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinarySearchTree`1.AllInstances.FindT0">
+            <summary>Sets the shim of ZBinarySearchTree`1.Find(!0 data)</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.ShimZBinaryTree`1">
+            <summary>Shim type of ZDataStructure.ZBinaryTree`1</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZBinaryTree`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZBinaryTree`1.#ctor(ZDataStructure.ZBinaryTree{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZBinaryTree`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZBinaryTree`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.BuildTreeListOfT0ListOfT0">
+            <summary>Sets the shim of ZBinaryTree`1.BuildTree(List`1&lt;!0&gt; preorderList, List`1&lt;!0&gt; inorderList)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.BuildTreeListOfT0ListOfT0Int32Int32Int32">
+            <summary>Sets the shim of ZBinaryTree`1.BuildTree(List`1&lt;!0&gt; preorderList, List`1&lt;!0&gt; inorderList, Int32 start, Int32 end, Int32 preIndex)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.Clear">
+            <summary>Sets the shim of ZBinaryTree`1.Clear()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.Constructor">
+            <summary>Sets the shim of ZBinaryTree`1.ZBinaryTree`1()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.Count">
+            <summary>Sets the shim of ZBinaryTree`1.Count()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.CountChildrenZBinaryTreeNodeOfT0">
+            <summary>Sets the shim of ZBinaryTree`1.CountChildren(ZBinaryTreeNode`1&lt;!0&gt; node)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.CountFullNodes">
+            <summary>Sets the shim of ZBinaryTree`1.CountFullNodes()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.CountLeafNodes">
+            <summary>Sets the shim of ZBinaryTree`1.CountLeafNodes()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.GetAncestersT0">
+            <summary>Sets the shim of ZBinaryTree`1.GetAncesters(!0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.GetAncestersZBinaryTreeNodeOfT0T0ListOfZBinaryTreeNodeOfT0">
+            <summary>Sets the shim of ZBinaryTree`1.GetAncesters(ZBinaryTreeNode`1&lt;!0&gt; node, !0 data, List`1&lt;ZBinaryTreeNode`1&lt;!0&gt;&gt; items)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.InOrderList">
+            <summary>Sets the shim of ZBinaryTree`1.InOrderList()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.InOrderZBinaryTreeNodeOfT0ListOfT0">
+            <summary>Sets the shim of ZBinaryTree`1.InOrder(ZBinaryTreeNode`1&lt;!0&gt; node, List`1&lt;!0&gt; items)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.LevelOrderList">
+            <summary>Sets the shim of ZBinaryTree`1.LevelOrderList()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.MaxHeight">
+            <summary>Sets the shim of ZBinaryTree`1.MaxHeight()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.MaxWidth">
+            <summary>Sets the shim of ZBinaryTree`1.MaxWidth()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.PostOrderList">
+            <summary>Sets the shim of ZBinaryTree`1.PostOrderList()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.PostOrderZBinaryTreeNodeOfT0ListOfT0">
+            <summary>Sets the shim of ZBinaryTree`1.PostOrder(ZBinaryTreeNode`1&lt;!0&gt; node, List`1&lt;!0&gt; items)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.PreOrderList">
+            <summary>Sets the shim of ZBinaryTree`1.PreOrderList()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.PreOrderZBinaryTreeNodeOfT0ListOfT0">
+            <summary>Sets the shim of ZBinaryTree`1.PreOrder(ZBinaryTreeNode`1&lt;!0&gt; node, List`1&lt;!0&gt; items)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.RootGet">
+            <summary>Sets the shim of ZBinaryTree`1.get_Root()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.RootSetZBinaryTreeNodeOfT0">
+            <summary>Sets the shim of ZBinaryTree`1.set_Root(ZBinaryTreeNode`1&lt;!0&gt; value)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.SearchListOfT0Int32Int32T0">
+            <summary>Sets the shim of ZBinaryTree`1.Search(List`1&lt;!0&gt; list, Int32 start, Int32 end, !0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.SearchT0">
+            <summary>Sets the shim of ZBinaryTree`1.Search(!0 data)</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.ShimZBinaryTree`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.AllInstances.Clear">
+            <summary>Sets the shim of ZBinaryTree`1.Clear()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.AllInstances.Count">
+            <summary>Sets the shim of ZBinaryTree`1.Count()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.AllInstances.CountChildrenZBinaryTreeNodeOfT0">
+            <summary>Sets the shim of ZBinaryTree`1.CountChildren(ZBinaryTreeNode`1&lt;!0&gt; node)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.AllInstances.CountFullNodes">
+            <summary>Sets the shim of ZBinaryTree`1.CountFullNodes()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.AllInstances.CountLeafNodes">
+            <summary>Sets the shim of ZBinaryTree`1.CountLeafNodes()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.AllInstances.GetAncestersT0">
+            <summary>Sets the shim of ZBinaryTree`1.GetAncesters(!0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.AllInstances.GetAncestersZBinaryTreeNodeOfT0T0ListOfZBinaryTreeNodeOfT0">
+            <summary>Sets the shim of ZBinaryTree`1.GetAncesters(ZBinaryTreeNode`1&lt;!0&gt; node, !0 data, List`1&lt;ZBinaryTreeNode`1&lt;!0&gt;&gt; items)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.AllInstances.InOrderList">
+            <summary>Sets the shim of ZBinaryTree`1.InOrderList()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.AllInstances.InOrderZBinaryTreeNodeOfT0ListOfT0">
+            <summary>Sets the shim of ZBinaryTree`1.InOrder(ZBinaryTreeNode`1&lt;!0&gt; node, List`1&lt;!0&gt; items)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.AllInstances.LevelOrderList">
+            <summary>Sets the shim of ZBinaryTree`1.LevelOrderList()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.AllInstances.MaxHeight">
+            <summary>Sets the shim of ZBinaryTree`1.MaxHeight()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.AllInstances.MaxWidth">
+            <summary>Sets the shim of ZBinaryTree`1.MaxWidth()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.AllInstances.PostOrderList">
+            <summary>Sets the shim of ZBinaryTree`1.PostOrderList()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.AllInstances.PostOrderZBinaryTreeNodeOfT0ListOfT0">
+            <summary>Sets the shim of ZBinaryTree`1.PostOrder(ZBinaryTreeNode`1&lt;!0&gt; node, List`1&lt;!0&gt; items)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.AllInstances.PreOrderList">
+            <summary>Sets the shim of ZBinaryTree`1.PreOrderList()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.AllInstances.PreOrderZBinaryTreeNodeOfT0ListOfT0">
+            <summary>Sets the shim of ZBinaryTree`1.PreOrder(ZBinaryTreeNode`1&lt;!0&gt; node, List`1&lt;!0&gt; items)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.AllInstances.RootGet">
+            <summary>Sets the shim of ZBinaryTree`1.get_Root()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.AllInstances.RootSetZBinaryTreeNodeOfT0">
+            <summary>Sets the shim of ZBinaryTree`1.set_Root(ZBinaryTreeNode`1&lt;!0&gt; value)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTree`1.AllInstances.SearchT0">
+            <summary>Sets the shim of ZBinaryTree`1.Search(!0 data)</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.ShimZBinaryTreeNode`1">
+            <summary>Shim type of ZDataStructure.ZBinaryTreeNode`1</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.#ctor(ZDataStructure.ZBinaryTreeNode{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.Bind(System.IComparable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.CompareToObject">
+            <summary>Sets the shim of ZBinaryTreeNode`1.CompareTo(Object data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.ConstructorT0">
+            <summary>Sets the shim of ZBinaryTreeNode`1.ZBinaryTreeNode`1(!0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.ConstructorT0ZBinaryTreeNodeOfT0ZBinaryTreeNodeOfT0">
+            <summary>Sets the shim of ZBinaryTreeNode`1.ZBinaryTreeNode`1(!0 data, ZBinaryTreeNode`1&lt;!0&gt; left, ZBinaryTreeNode`1&lt;!0&gt; right)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.HasChildrenGet">
+            <summary>Sets the shim of ZBinaryTreeNode`1.get_HasChildren()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.LeftNodeGet">
+            <summary>Sets the shim of ZBinaryTreeNode`1.get_LeftNode()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.LeftNodeSetZBinaryTreeNodeOfT0">
+            <summary>Sets the shim of ZBinaryTreeNode`1.set_LeftNode(ZBinaryTreeNode`1&lt;!0&gt; value)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.RightNodeGet">
+            <summary>Sets the shim of ZBinaryTreeNode`1.get_RightNode()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.RightNodeSetZBinaryTreeNodeOfT0">
+            <summary>Sets the shim of ZBinaryTreeNode`1.set_RightNode(ZBinaryTreeNode`1&lt;!0&gt; value)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.ValueGet">
+            <summary>Sets the shim of ZBinaryTreeNode`1.get_Value()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.ValueSetT0">
+            <summary>Sets the shim of ZBinaryTreeNode`1.set_Value(!0 value)</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.AllInstances.CompareToObject">
+            <summary>Sets the shim of ZBinaryTreeNode`1.CompareTo(Object data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.AllInstances.HasChildrenGet">
+            <summary>Sets the shim of ZBinaryTreeNode`1.get_HasChildren()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.AllInstances.LeftNodeGet">
+            <summary>Sets the shim of ZBinaryTreeNode`1.get_LeftNode()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.AllInstances.LeftNodeSetZBinaryTreeNodeOfT0">
+            <summary>Sets the shim of ZBinaryTreeNode`1.set_LeftNode(ZBinaryTreeNode`1&lt;!0&gt; value)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.AllInstances.RightNodeGet">
+            <summary>Sets the shim of ZBinaryTreeNode`1.get_RightNode()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.AllInstances.RightNodeSetZBinaryTreeNodeOfT0">
+            <summary>Sets the shim of ZBinaryTreeNode`1.set_RightNode(ZBinaryTreeNode`1&lt;!0&gt; value)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.AllInstances.ValueGet">
+            <summary>Sets the shim of ZBinaryTreeNode`1.get_Value()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZBinaryTreeNode`1.AllInstances.ValueSetT0">
+            <summary>Sets the shim of ZBinaryTreeNode`1.set_Value(!0 value)</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.ShimZHashTable`2">
+            <summary>Shim type of ZDataStructure.ZHashTable`2</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZHashTable`2.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZHashTable`2.#ctor(ZDataStructure.ZHashTable{`0,`1})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZHashTable`2.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZHashTable`2.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZHashTable`2.AddT0T1">
+            <summary>Sets the shim of ZHashTable`2.Add(!0 key, !1 value)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZHashTable`2.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZHashTable`2.Constructor">
+            <summary>Sets the shim of ZHashTable`2.ZHashTable`2()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZHashTable`2.GetPositionT0Int32">
+            <summary>Sets the shim of ZHashTable`2.GetPosition(!0 key, Int32 length)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZHashTable`2.GetT0">
+            <summary>Sets the shim of ZHashTable`2.Get(!0 key)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZHashTable`2.GrowAndRehash">
+            <summary>Sets the shim of ZHashTable`2.GrowAndRehash()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZHashTable`2.NeedToGrow">
+            <summary>Sets the shim of ZHashTable`2.NeedToGrow()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZHashTable`2.RemoveT0">
+            <summary>Sets the shim of ZHashTable`2.Remove(!0 key)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZHashTable`2._GrowAndRehashb__0ZLinkedListOfTupleOfT0T1">
+            <summary>Sets the shim of ZHashTable`2.&lt;GrowAndRehash&gt;b__0(ZLinkedList`1&lt;Tuple`2&lt;!0,!1&gt;&gt; x)</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.ShimZHashTable`2.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZHashTable`2.AllInstances.AddT0T1">
+            <summary>Sets the shim of ZHashTable`2.Add(!0 key, !1 value)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZHashTable`2.AllInstances.GetPositionT0Int32">
+            <summary>Sets the shim of ZHashTable`2.GetPosition(!0 key, Int32 length)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZHashTable`2.AllInstances.GetT0">
+            <summary>Sets the shim of ZHashTable`2.Get(!0 key)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZHashTable`2.AllInstances.GrowAndRehash">
+            <summary>Sets the shim of ZHashTable`2.GrowAndRehash()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZHashTable`2.AllInstances.NeedToGrow">
+            <summary>Sets the shim of ZHashTable`2.NeedToGrow()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZHashTable`2.AllInstances.RemoveT0">
+            <summary>Sets the shim of ZHashTable`2.Remove(!0 key)</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.ShimZLinkedList`1">
+            <summary>Shim type of ZDataStructure.ZLinkedList`1</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZLinkedList`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZLinkedList`1.#ctor(ZDataStructure.ZLinkedList{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZLinkedList`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZLinkedList`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AddT0">
+            <summary>Sets the shim of ZLinkedList`1.Add(!0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.Constructor">
+            <summary>Sets the shim of ZLinkedList`1.ZLinkedList`1()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.CountGet">
+            <summary>Sets the shim of ZLinkedList`1.get_Count()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.CountSetInt32">
+            <summary>Sets the shim of ZLinkedList`1.set_Count(Int32 value)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.DeleteZLinkedListNodeOfT0">
+            <summary>Sets the shim of ZLinkedList`1.Delete(ZLinkedListNode`1&lt;!0&gt; node)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.FindMiddle">
+            <summary>Sets the shim of ZLinkedList`1.FindMiddle()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.FindStartOfLoop">
+            <summary>Sets the shim of ZLinkedList`1.FindStartOfLoop()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.GetMiddleZLinkedListNodeOfT0">
+            <summary>Sets the shim of ZLinkedList`1.GetMiddle(ZLinkedListNode`1&lt;!0&gt; head)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.HeadGet">
+            <summary>Sets the shim of ZLinkedList`1.get_Head()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.HeadSetZLinkedListNodeOfT0">
+            <summary>Sets the shim of ZLinkedList`1.set_Head(ZLinkedListNode`1&lt;!0&gt; value)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.InsertAtInt32T0">
+            <summary>Sets the shim of ZLinkedList`1.InsertAt(Int32 index, !0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.InsertZLinkedListNodeOfT0T0">
+            <summary>Sets the shim of ZLinkedList`1.Insert(ZLinkedListNode`1&lt;!0&gt; nodeAfter, !0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.ItemGetInt32">
+            <summary>Sets the shim of ZLinkedList`1.get_Item(Int32 index)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.ItemSetInt32ZLinkedListNodeOfT0">
+            <summary>Sets the shim of ZLinkedList`1.set_Item(Int32 index, ZLinkedListNode`1&lt;!0&gt; value)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.MergeSortZLinkedListNodeOfT0">
+            <summary>Sets the shim of ZLinkedList`1.MergeSort(ZLinkedListNode`1&lt;!0&gt; head)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.MergeSortedLinkedListZLinkedListOfT0">
+            <summary>Sets the shim of ZLinkedList`1.MergeSortedLinkedList(ZLinkedList`1&lt;!0&gt; linkedList)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.MergeZLinkedListNodeOfT0ZLinkedListNodeOfT0">
+            <summary>Sets the shim of ZLinkedList`1.Merge(ZLinkedListNode`1&lt;!0&gt; a, ZLinkedListNode`1&lt;!0&gt; b)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.NodeAtInt32">
+            <summary>Sets the shim of ZLinkedList`1.NodeAt(Int32 index)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.Reverse">
+            <summary>Sets the shim of ZLinkedList`1.Reverse()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.SearchZLinkedListNodeOfT0">
+            <summary>Sets the shim of ZLinkedList`1.Search(ZLinkedListNode`1&lt;!0&gt; node)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.Sort">
+            <summary>Sets the shim of ZLinkedList`1.Sort()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.TailGet">
+            <summary>Sets the shim of ZLinkedList`1.get_Tail()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.TailSetZLinkedListNodeOfT0">
+            <summary>Sets the shim of ZLinkedList`1.set_Tail(ZLinkedListNode`1&lt;!0&gt; value)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.ToList">
+            <summary>Sets the shim of ZLinkedList`1.ToList()</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.AddT0">
+            <summary>Sets the shim of ZLinkedList`1.Add(!0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.CountGet">
+            <summary>Sets the shim of ZLinkedList`1.get_Count()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.CountSetInt32">
+            <summary>Sets the shim of ZLinkedList`1.set_Count(Int32 value)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.DeleteZLinkedListNodeOfT0">
+            <summary>Sets the shim of ZLinkedList`1.Delete(ZLinkedListNode`1&lt;!0&gt; node)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.FindMiddle">
+            <summary>Sets the shim of ZLinkedList`1.FindMiddle()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.FindStartOfLoop">
+            <summary>Sets the shim of ZLinkedList`1.FindStartOfLoop()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.GetMiddleZLinkedListNodeOfT0">
+            <summary>Sets the shim of ZLinkedList`1.GetMiddle(ZLinkedListNode`1&lt;!0&gt; head)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.HeadGet">
+            <summary>Sets the shim of ZLinkedList`1.get_Head()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.HeadSetZLinkedListNodeOfT0">
+            <summary>Sets the shim of ZLinkedList`1.set_Head(ZLinkedListNode`1&lt;!0&gt; value)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.InsertAtInt32T0">
+            <summary>Sets the shim of ZLinkedList`1.InsertAt(Int32 index, !0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.InsertZLinkedListNodeOfT0T0">
+            <summary>Sets the shim of ZLinkedList`1.Insert(ZLinkedListNode`1&lt;!0&gt; nodeAfter, !0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.ItemGetInt32">
+            <summary>Sets the shim of ZLinkedList`1.get_Item(Int32 index)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.ItemSetInt32ZLinkedListNodeOfT0">
+            <summary>Sets the shim of ZLinkedList`1.set_Item(Int32 index, ZLinkedListNode`1&lt;!0&gt; value)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.MergeSortZLinkedListNodeOfT0">
+            <summary>Sets the shim of ZLinkedList`1.MergeSort(ZLinkedListNode`1&lt;!0&gt; head)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.MergeSortedLinkedListZLinkedListOfT0">
+            <summary>Sets the shim of ZLinkedList`1.MergeSortedLinkedList(ZLinkedList`1&lt;!0&gt; linkedList)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.MergeZLinkedListNodeOfT0ZLinkedListNodeOfT0">
+            <summary>Sets the shim of ZLinkedList`1.Merge(ZLinkedListNode`1&lt;!0&gt; a, ZLinkedListNode`1&lt;!0&gt; b)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.NodeAtInt32">
+            <summary>Sets the shim of ZLinkedList`1.NodeAt(Int32 index)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.Reverse">
+            <summary>Sets the shim of ZLinkedList`1.Reverse()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.SearchZLinkedListNodeOfT0">
+            <summary>Sets the shim of ZLinkedList`1.Search(ZLinkedListNode`1&lt;!0&gt; node)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.Sort">
+            <summary>Sets the shim of ZLinkedList`1.Sort()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.TailGet">
+            <summary>Sets the shim of ZLinkedList`1.get_Tail()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.TailSetZLinkedListNodeOfT0">
+            <summary>Sets the shim of ZLinkedList`1.set_Tail(ZLinkedListNode`1&lt;!0&gt; value)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedList`1.AllInstances.ToList">
+            <summary>Sets the shim of ZLinkedList`1.ToList()</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.ShimZLinkedListNode`1">
+            <summary>Shim type of ZDataStructure.ZLinkedListNode`1</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZLinkedListNode`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZLinkedListNode`1.#ctor(ZDataStructure.ZLinkedListNode{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZLinkedListNode`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZLinkedListNode`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedListNode`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedListNode`1.Constructor">
+            <summary>Sets the shim of ZLinkedListNode`1.ZLinkedListNode`1()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedListNode`1.NextNodeGet">
+            <summary>Sets the shim of ZLinkedListNode`1.get_NextNode()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedListNode`1.NextNodeSetZLinkedListNodeOfT0">
+            <summary>Sets the shim of ZLinkedListNode`1.set_NextNode(ZLinkedListNode`1&lt;!0&gt; value)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedListNode`1.ValueGet">
+            <summary>Sets the shim of ZLinkedListNode`1.get_Value()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedListNode`1.ValueSetT0">
+            <summary>Sets the shim of ZLinkedListNode`1.set_Value(!0 value)</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.ShimZLinkedListNode`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedListNode`1.AllInstances.NextNodeGet">
+            <summary>Sets the shim of ZLinkedListNode`1.get_NextNode()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedListNode`1.AllInstances.NextNodeSetZLinkedListNodeOfT0">
+            <summary>Sets the shim of ZLinkedListNode`1.set_NextNode(ZLinkedListNode`1&lt;!0&gt; value)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedListNode`1.AllInstances.ValueGet">
+            <summary>Sets the shim of ZLinkedListNode`1.get_Value()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZLinkedListNode`1.AllInstances.ValueSetT0">
+            <summary>Sets the shim of ZLinkedListNode`1.set_Value(!0 value)</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.ShimZPriorityQueue`2">
+            <summary>Shim type of ZDataStructure.ZPriorityQueue`2</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZPriorityQueue`2.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZPriorityQueue`2.#ctor(ZDataStructure.ZPriorityQueue{`0,`1})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZPriorityQueue`2.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZPriorityQueue`2.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZPriorityQueue`2.Bind(System.Collections.IEnumerable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZPriorityQueue`2.Bind(System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{`0,`1}})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZPriorityQueue`2.Bind(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.AddKeyValuePairOfT0T1">
+            <summary>Sets the shim of ZPriorityQueue`2.Add(KeyValuePair`2&lt;!0,!1&gt; item)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.Clear">
+            <summary>Sets the shim of ZPriorityQueue`2.Clear()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.Constructor">
+            <summary>Sets the shim of ZPriorityQueue`2.ZPriorityQueue`2()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.ConstructorIComparerOfT0">
+            <summary>Sets the shim of ZPriorityQueue`2.ZPriorityQueue`2(IComparer`1&lt;!0&gt; comparer)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.ConstructorIEnumerableOfKeyValuePairOfT0T1">
+            <summary>Sets the shim of ZPriorityQueue`2.ZPriorityQueue`2(IEnumerable`1&lt;KeyValuePair`2&lt;!0,!1&gt;&gt; data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.ConstructorIEnumerableOfKeyValuePairOfT0T1IComparerOfT0">
+            <summary>Sets the shim of ZPriorityQueue`2.ZPriorityQueue`2(IEnumerable`1&lt;KeyValuePair`2&lt;!0,!1&gt;&gt; data, IComparer`1&lt;!0&gt; comparer)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.ConstructorInt32">
+            <summary>Sets the shim of ZPriorityQueue`2.ZPriorityQueue`2(Int32 capacity)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.ConstructorInt32IComparerOfT0">
+            <summary>Sets the shim of ZPriorityQueue`2.ZPriorityQueue`2(Int32 capacity, IComparer`1&lt;!0&gt; comparer)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.ContainsKeyValuePairOfT0T1">
+            <summary>Sets the shim of ZPriorityQueue`2.Contains(KeyValuePair`2&lt;!0,!1&gt; item)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.CopyToKeyValuePairOfT0T1ArrayInt32">
+            <summary>Sets the shim of ZPriorityQueue`2.CopyTo(KeyValuePair`2&lt;!0,!1&gt;[] array, Int32 arrayIndex)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.CountGet">
+            <summary>Sets the shim of ZPriorityQueue`2.get_Count()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.DeleteRoot">
+            <summary>Sets the shim of ZPriorityQueue`2.DeleteRoot()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.Dequeue">
+            <summary>Sets the shim of ZPriorityQueue`2.Dequeue()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.DequeueValue">
+            <summary>Sets the shim of ZPriorityQueue`2.DequeueValue()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.EnqueueT0T1">
+            <summary>Sets the shim of ZPriorityQueue`2.Enqueue(!0 priority, !1 value)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.ExchangeElementsInt32Int32">
+            <summary>Sets the shim of ZPriorityQueue`2.ExchangeElements(Int32 pos1, Int32 pos2)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.GetEnumerator">
+            <summary>Sets the shim of ZPriorityQueue`2.GetEnumerator()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.HeapifyFromBeginningToEndInt32">
+            <summary>Sets the shim of ZPriorityQueue`2.HeapifyFromBeginningToEnd(Int32 pos)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.HeapifyFromEndToBeginningInt32">
+            <summary>Sets the shim of ZPriorityQueue`2.HeapifyFromEndToBeginning(Int32 pos)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.InsertT0T1">
+            <summary>Sets the shim of ZPriorityQueue`2.Insert(!0 priority, !1 value)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.IsEmptyGet">
+            <summary>Sets the shim of ZPriorityQueue`2.get_IsEmpty()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.IsReadOnlyGet">
+            <summary>Sets the shim of ZPriorityQueue`2.get_IsReadOnly()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.MergeQueuesZPriorityQueueOfT0T1ZPriorityQueueOfT0T1">
+            <summary>Sets the shim of ZPriorityQueue`2.MergeQueues(ZPriorityQueue`2&lt;!0,!1&gt; pq1, ZPriorityQueue`2&lt;!0,!1&gt; pq2)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.MergeQueuesZPriorityQueueOfT0T1ZPriorityQueueOfT0T1IComparerOfT0">
+            <summary>Sets the shim of ZPriorityQueue`2.MergeQueues(ZPriorityQueue`2&lt;!0,!1&gt; pq1, ZPriorityQueue`2&lt;!0,!1&gt; pq2, IComparer`1&lt;!0&gt; comparer)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.Peek">
+            <summary>Sets the shim of ZPriorityQueue`2.Peek()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.PeekValue">
+            <summary>Sets the shim of ZPriorityQueue`2.PeekValue()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.RemoveKeyValuePairOfT0T1">
+            <summary>Sets the shim of ZPriorityQueue`2.Remove(KeyValuePair`2&lt;!0,!1&gt; item)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.SystemCollectionsIEnumerableGetEnumerator">
+            <summary>Sets the shim of ZPriorityQueue`2.System.Collections.IEnumerable.GetEnumerator()</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.ShimZPriorityQueue`2.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.AllInstances.AddKeyValuePairOfT0T1">
+            <summary>Sets the shim of ZPriorityQueue`2.Add(KeyValuePair`2&lt;!0,!1&gt; item)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.AllInstances.Clear">
+            <summary>Sets the shim of ZPriorityQueue`2.Clear()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.AllInstances.ContainsKeyValuePairOfT0T1">
+            <summary>Sets the shim of ZPriorityQueue`2.Contains(KeyValuePair`2&lt;!0,!1&gt; item)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.AllInstances.CopyToKeyValuePairOfT0T1ArrayInt32">
+            <summary>Sets the shim of ZPriorityQueue`2.CopyTo(KeyValuePair`2&lt;!0,!1&gt;[] array, Int32 arrayIndex)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.AllInstances.CountGet">
+            <summary>Sets the shim of ZPriorityQueue`2.get_Count()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.AllInstances.DeleteRoot">
+            <summary>Sets the shim of ZPriorityQueue`2.DeleteRoot()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.AllInstances.Dequeue">
+            <summary>Sets the shim of ZPriorityQueue`2.Dequeue()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.AllInstances.DequeueValue">
+            <summary>Sets the shim of ZPriorityQueue`2.DequeueValue()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.AllInstances.EnqueueT0T1">
+            <summary>Sets the shim of ZPriorityQueue`2.Enqueue(!0 priority, !1 value)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.AllInstances.ExchangeElementsInt32Int32">
+            <summary>Sets the shim of ZPriorityQueue`2.ExchangeElements(Int32 pos1, Int32 pos2)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.AllInstances.GetEnumerator">
+            <summary>Sets the shim of ZPriorityQueue`2.GetEnumerator()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.AllInstances.HeapifyFromBeginningToEndInt32">
+            <summary>Sets the shim of ZPriorityQueue`2.HeapifyFromBeginningToEnd(Int32 pos)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.AllInstances.HeapifyFromEndToBeginningInt32">
+            <summary>Sets the shim of ZPriorityQueue`2.HeapifyFromEndToBeginning(Int32 pos)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.AllInstances.InsertT0T1">
+            <summary>Sets the shim of ZPriorityQueue`2.Insert(!0 priority, !1 value)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.AllInstances.IsEmptyGet">
+            <summary>Sets the shim of ZPriorityQueue`2.get_IsEmpty()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.AllInstances.IsReadOnlyGet">
+            <summary>Sets the shim of ZPriorityQueue`2.get_IsReadOnly()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.AllInstances.Peek">
+            <summary>Sets the shim of ZPriorityQueue`2.Peek()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.AllInstances.PeekValue">
+            <summary>Sets the shim of ZPriorityQueue`2.PeekValue()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.AllInstances.RemoveKeyValuePairOfT0T1">
+            <summary>Sets the shim of ZPriorityQueue`2.Remove(KeyValuePair`2&lt;!0,!1&gt; item)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZPriorityQueue`2.AllInstances.SystemCollectionsIEnumerableGetEnumerator">
+            <summary>Sets the shim of ZPriorityQueue`2.System.Collections.IEnumerable.GetEnumerator()</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.ShimZQueue`1">
+            <summary>Shim type of ZDataStructure.ZQueue`1</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZQueue`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZQueue`1.#ctor(ZDataStructure.ZQueue{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZQueue`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZQueue`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZQueue`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZQueue`1.Constructor">
+            <summary>Sets the shim of ZQueue`1.ZQueue`1()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZQueue`1.Count">
+            <summary>Sets the shim of ZQueue`1.Count()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZQueue`1.Dequeue">
+            <summary>Sets the shim of ZQueue`1.Dequeue()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZQueue`1.EnqueueT0">
+            <summary>Sets the shim of ZQueue`1.Enqueue(!0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZQueue`1.Reverse">
+            <summary>Sets the shim of ZQueue`1.Reverse()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZQueue`1.ToList">
+            <summary>Sets the shim of ZQueue`1.ToList()</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.ShimZQueue`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZQueue`1.AllInstances.Count">
+            <summary>Sets the shim of ZQueue`1.Count()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZQueue`1.AllInstances.Dequeue">
+            <summary>Sets the shim of ZQueue`1.Dequeue()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZQueue`1.AllInstances.EnqueueT0">
+            <summary>Sets the shim of ZQueue`1.Enqueue(!0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZQueue`1.AllInstances.Reverse">
+            <summary>Sets the shim of ZQueue`1.Reverse()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZQueue`1.AllInstances.ToList">
+            <summary>Sets the shim of ZQueue`1.ToList()</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.ShimZStackByLinkedList`1">
+            <summary>Shim type of ZDataStructure.ZStackByLinkedList`1</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZStackByLinkedList`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZStackByLinkedList`1.#ctor(ZDataStructure.ZStackByLinkedList{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZStackByLinkedList`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZStackByLinkedList`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByLinkedList`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByLinkedList`1.Constructor">
+            <summary>Sets the shim of ZStackByLinkedList`1.ZStackByLinkedList`1()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByLinkedList`1.Count">
+            <summary>Sets the shim of ZStackByLinkedList`1.Count()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByLinkedList`1.Peek">
+            <summary>Sets the shim of ZStackByLinkedList`1.Peek()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByLinkedList`1.Pop">
+            <summary>Sets the shim of ZStackByLinkedList`1.Pop()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByLinkedList`1.PushT0">
+            <summary>Sets the shim of ZStackByLinkedList`1.Push(!0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByLinkedList`1.Reverse">
+            <summary>Sets the shim of ZStackByLinkedList`1.Reverse()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByLinkedList`1.Sort">
+            <summary>Sets the shim of ZStackByLinkedList`1.Sort()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByLinkedList`1.ToList">
+            <summary>Sets the shim of ZStackByLinkedList`1.ToList()</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.ShimZStackByLinkedList`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByLinkedList`1.AllInstances.Count">
+            <summary>Sets the shim of ZStackByLinkedList`1.Count()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByLinkedList`1.AllInstances.Peek">
+            <summary>Sets the shim of ZStackByLinkedList`1.Peek()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByLinkedList`1.AllInstances.Pop">
+            <summary>Sets the shim of ZStackByLinkedList`1.Pop()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByLinkedList`1.AllInstances.PushT0">
+            <summary>Sets the shim of ZStackByLinkedList`1.Push(!0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByLinkedList`1.AllInstances.Reverse">
+            <summary>Sets the shim of ZStackByLinkedList`1.Reverse()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByLinkedList`1.AllInstances.Sort">
+            <summary>Sets the shim of ZStackByLinkedList`1.Sort()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByLinkedList`1.AllInstances.ToList">
+            <summary>Sets the shim of ZStackByLinkedList`1.ToList()</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.ShimZStackByList`1">
+            <summary>Shim type of ZDataStructure.ZStackByList`1</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZStackByList`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZStackByList`1.#ctor(ZDataStructure.ZStackByList{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZStackByList`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.ShimZStackByList`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByList`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByList`1.Constructor">
+            <summary>Sets the shim of ZStackByList`1.ZStackByList`1()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByList`1.Count">
+            <summary>Sets the shim of ZStackByList`1.Count()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByList`1.Peek">
+            <summary>Sets the shim of ZStackByList`1.Peek()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByList`1.Pop">
+            <summary>Sets the shim of ZStackByList`1.Pop()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByList`1.PushT0">
+            <summary>Sets the shim of ZStackByList`1.Push(!0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByList`1.Reverse">
+            <summary>Sets the shim of ZStackByList`1.Reverse()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByList`1.Sort">
+            <summary>Sets the shim of ZStackByList`1.Sort()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByList`1.ToList">
+            <summary>Sets the shim of ZStackByList`1.ToList()</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.ShimZStackByList`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByList`1.AllInstances.Count">
+            <summary>Sets the shim of ZStackByList`1.Count()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByList`1.AllInstances.Peek">
+            <summary>Sets the shim of ZStackByList`1.Peek()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByList`1.AllInstances.Pop">
+            <summary>Sets the shim of ZStackByList`1.Pop()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByList`1.AllInstances.PushT0">
+            <summary>Sets the shim of ZStackByList`1.Push(!0 data)</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByList`1.AllInstances.Reverse">
+            <summary>Sets the shim of ZStackByList`1.Reverse()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByList`1.AllInstances.Sort">
+            <summary>Sets the shim of ZStackByList`1.Sort()</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.ShimZStackByList`1.AllInstances.ToList">
+            <summary>Sets the shim of ZStackByList`1.ToList()</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.StubZBinarySearchTree`1">
+            <summary>Stub type of ZDataStructure.ZBinarySearchTree`1</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZBinarySearchTree`1.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZBinarySearchTree`1.InitializeStub">
+            <summary>Initializes a new instance of type StubZBinarySearchTree</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZBinarySearchTree`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZBinarySearchTree`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZBinarySearchTree`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.StubZBinaryTree`1">
+            <summary>Stub type of ZDataStructure.ZBinaryTree`1</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZBinaryTree`1.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZBinaryTree`1.InitializeStub">
+            <summary>Initializes a new instance of type StubZBinaryTree</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZBinaryTree`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZBinaryTree`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZBinaryTree`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.StubZBinaryTreeNode`1">
+            <summary>Stub type of ZDataStructure.ZBinaryTreeNode`1</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZBinaryTreeNode`1.#ctor(`0)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZBinaryTreeNode`1.#ctor(`0,ZDataStructure.ZBinaryTreeNode{`0},ZDataStructure.ZBinaryTreeNode{`0})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZBinaryTreeNode`1.InitializeStub">
+            <summary>Initializes a new instance of type StubZBinaryTreeNode</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZBinaryTreeNode`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZBinaryTreeNode`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZBinaryTreeNode`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.StubZHashTable`2">
+            <summary>Stub type of ZDataStructure.ZHashTable`2</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZHashTable`2.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZHashTable`2.InitializeStub">
+            <summary>Initializes a new instance of type StubZHashTable</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZHashTable`2.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZHashTable`2.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZHashTable`2.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.StubZLinkedList`1">
+            <summary>Stub type of ZDataStructure.ZLinkedList`1</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZLinkedList`1.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZLinkedList`1.InitializeStub">
+            <summary>Initializes a new instance of type StubZLinkedList</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZLinkedList`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZLinkedList`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZLinkedList`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.StubZLinkedListNode`1">
+            <summary>Stub type of ZDataStructure.ZLinkedListNode`1</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZLinkedListNode`1.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZLinkedListNode`1.InitializeStub">
+            <summary>Initializes a new instance of type StubZLinkedListNode</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZLinkedListNode`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZLinkedListNode`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZLinkedListNode`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.StubZPriorityQueue`2">
+            <summary>Stub type of ZDataStructure.ZPriorityQueue`2</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZPriorityQueue`2.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZPriorityQueue`2.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZPriorityQueue`2.#ctor(System.Int32)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZPriorityQueue`2.#ctor(System.Collections.Generic.IComparer{`0})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZPriorityQueue`2.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}},System.Collections.Generic.IComparer{`0})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZPriorityQueue`2.#ctor(System.Int32,System.Collections.Generic.IComparer{`0})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZPriorityQueue`2.InitializeStub">
+            <summary>Initializes a new instance of type StubZPriorityQueue</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZPriorityQueue`2.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZPriorityQueue`2.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZPriorityQueue`2.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.StubZQueue`1">
+            <summary>Stub type of ZDataStructure.ZQueue`1</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZQueue`1.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZQueue`1.InitializeStub">
+            <summary>Initializes a new instance of type StubZQueue</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZQueue`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZQueue`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZQueue`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.StubZStackByLinkedList`1">
+            <summary>Stub type of ZDataStructure.ZStackByLinkedList`1</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZStackByLinkedList`1.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZStackByLinkedList`1.InitializeStub">
+            <summary>Initializes a new instance of type StubZStackByLinkedList</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZStackByLinkedList`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZStackByLinkedList`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZStackByLinkedList`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:ZDataStructure.Fakes.StubZStackByList`1">
+            <summary>Stub type of ZDataStructure.ZStackByList`1</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZStackByList`1.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ZDataStructure.Fakes.StubZStackByList`1.InitializeStub">
+            <summary>Initializes a new instance of type StubZStackByList</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZStackByList`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZStackByList`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ZDataStructure.Fakes.StubZStackByList`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,173 @@
+﻿<UserControl x:Class="ZUtility.View.FileViewerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:System="clr-namespace:System;assembly=mscorlib"
+             xmlns:vm="clr-namespace:ZUtility.ViewModel"
+             xmlns:conv="clr-namespace:ZUtility.Converter"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <Style x:Key="BigFontButtonStyle">
+            <Setter Property="Control.FontFamily" Value="Times New Roman" />
+            <Setter Property="Control.FontSize" Value="14" />
+            <Setter Property="Control.FontWeight" Value="Bold" />
+        </Style>
+        <conv:RadioButtonCheckedConverter x:Key="RadioButtonCheckedConverter" />
+        <ObjectDataProvider x:Key="OrderByOptions" MethodName="GetValues"
+                            ObjectType="{x:Type System:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="vm:OrderByOptions"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+        <ObjectDataProvider x:Key="OrderByDirectionOptions" MethodName="GetValues"
+                            ObjectType="{x:Type System:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="vm:OrderByDirectionOptions"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <DockPanel Grid.Column="0" Grid.Row="0">
+            <Border DockPanel.Dock="Bottom" BorderBrush="Gray" BorderThickness="1,0,1,1">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="#33000000" Offset="0" />
+                        <GradientStop Color="#11000000" Offset="1" />
+                    </LinearGradientBrush>
+                </Border.Background>
+                <StackPanel HorizontalAlignment="Center" Margin="4" Orientation="Horizontal">
+                    <TextBlock Text="Search for:" />
+                    <TextBox x:Name="searchTextBox" Margin="6,0" Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" Width="150"/>
+                    <Button Command="{Binding SearchCommand}" Content="_Find" Padding="8,0"/>
+                </StackPanel>
+            </Border>
+            <TreeView ItemsSource="{Binding Folders}" SelectedItemChanged="TreeView_SelectedItemChanged">
+                <TreeView.ItemContainerStyle>
+                    <Style TargetType="{x:Type TreeViewItem}">
+                        <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}" />
+                        <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}" />
+                        <Setter Property="FontWeight" Value="Normal" />
+                        <Style.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="FontWeight" Value="Bold" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TreeView.ItemContainerStyle>
+                <TreeView.Resources>
+                    <HierarchicalDataTemplate DataType="{x:Type vm:TreeViewItemViewModel}"  ItemsSource="{Binding Children}">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Name}" />
+                        </StackPanel>
+                    </HierarchicalDataTemplate>
+                </TreeView.Resources>
+            </TreeView>
+        </DockPanel>
+        <GridSplitter Grid.Column="1" Grid.Row="0" Width="5" HorizontalAlignment="Center" VerticalAlignment="Stretch" ShowsPreview="True" />
+        <DockPanel Grid.Column="2" Grid.Row="0">
+            <Grid DockPanel.Dock="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="120"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <GroupBox Grid.Column="0" Grid.Row="0" Header="Filter">
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal">
+                            <CheckBox IsChecked="{Binding Path=IsFilterFileName}">Filename like</CheckBox>
+                            <TextBox Text="{Binding Path=FilterFileName}" IsEnabled="{Binding Path=IsFilterFileName}" Width="200"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <CheckBox IsChecked="{Binding Path=IsFilterSize}">Size (MB)</CheckBox>
+                            <ComboBox Width="50" ItemsSource="{Binding Path=FileSizeByOptions}" SelectedValue="{Binding Path=FilterSizeBy}">
+                            </ComboBox>
+                            <TextBox Width="200" Text="{Binding Path=FilterSize}" IsEnabled="{Binding Path=IsFilterSize}"></TextBox>
+                        </StackPanel>
+                        <CheckBox IsChecked="{Binding Path=IncludeSubDir}">Include sub directories</CheckBox>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Grid.Column="1" Grid.Row="0" Header="Action">
+                    <StackPanel Orientation="Vertical">
+                        <RadioButton GroupName="Action" IsChecked="{Binding Path=ActionType, Converter={StaticResource RadioButtonCheckedConverter}, ConverterParameter={x:Static vm:FileActionTypeOptions.Nothing}}">Nothing</RadioButton>
+                        <RadioButton GroupName="Action" IsChecked="{Binding Path=ActionType, Converter={StaticResource RadioButtonCheckedConverter}, ConverterParameter={x:Static vm:FileActionTypeOptions.Delete}}">Delete</RadioButton>
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton GroupName="Action" IsChecked="{Binding Path=ActionType, Converter={StaticResource RadioButtonCheckedConverter}, ConverterParameter={x:Static vm:FileActionTypeOptions.CopyTo}}">Copy To</RadioButton>
+                            <TextBox Width="150" Text="{Binding Path=FileCopyTo}" IsEnabled="{Binding Source=rbActionCopyTo, Path=IsChecked}"></TextBox>
+                            <Button Command="{Binding BrowseCopyToCommand}">Browse</Button>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton GroupName="Action" IsChecked="{Binding Path=ActionType, Converter={StaticResource RadioButtonCheckedConverter}, ConverterParameter={x:Static vm:FileActionTypeOptions.MoveTo}}">Move To</RadioButton>
+                            <TextBox Width="150" Text="{Binding Path=FileMoveTo}" IsEnabled="{Binding Source=rbActionMoveTo, Path=IsChecked}"></TextBox>
+                            <Button Command="{Binding BrowseMoveToCommand}">Browse</Button>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton GroupName="Action" IsChecked="{Binding Path=ActionType, Converter={StaticResource RadioButtonCheckedConverter}, ConverterParameter={x:Static vm:FileActionTypeOptions.RenameTo}}">Rename To</RadioButton>
+                            <TextBox Width="150" Text="{Binding Path=FileRenameTo}" IsEnabled="{Binding Source=rbActionRenameTo, Path=IsChecked}"></TextBox>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Grid.Column="2" Grid.Row="0" Header="Order By">
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
+                        <ComboBox ItemsSource="{Binding Source={StaticResource OrderByDirectionOptions}}"
+                            SelectedItem="{Binding Path=OrderByDirection}">
+                        </ComboBox>
+                        <ComboBox ItemsSource="{Binding Source={StaticResource OrderByOptions}}"
+                            SelectedItem="{Binding Path=OrderBy}">
+                        </ComboBox>
+                    </StackPanel>
+                </GroupBox>
+            </Grid>
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Margin="2" Padding="2" Style="{StaticResource BigFontButtonStyle}" Command="{Binding PreviewCommand}">Preview</Button>
+                <Button Margin="2" Padding="2" Style="{StaticResource BigFontButtonStyle}" Command="{Binding RunCommand}">Run</Button>
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Left">
+                <CheckBox IsChecked="{Binding Path=IsGroupBy}">Group by directory</CheckBox>
+                <TextBlock> Total Files: </TextBlock>
+                <TextBlock Text="{Binding Path=FileCount}"></TextBlock>
+                <TextBlock> Duration: </TextBlock>
+                <TextBlock Text="{Binding Path=Duration}"></TextBlock>
+            </StackPanel>
+            <DataGrid ItemsSource="{Binding Path=Files}">
+                <DataGrid.GroupStyle>
+                    <GroupStyle>
+                        <GroupStyle.HeaderTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding Path=Name}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </GroupStyle.HeaderTemplate>
+                        <GroupStyle.ContainerStyle>
+                            <Style TargetType="{x:Type GroupItem}">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type GroupItem}">
+                                            <Expander>
+                                                <Expander.Header>
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="{Binding Path=Name}" />
+                                                        <TextBlock Text="{Binding Path=ItemCount}"/>
+                                                        <TextBlock Text="Items"/>
+                                                    </StackPanel>
+                                                </Expander.Header>
+                                                <ItemsPresenter />
+                                            </Expander>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </GroupStyle.ContainerStyle>
+                    </GroupStyle>
+                </DataGrid.GroupStyle>
+            </DataGrid>
+        </DockPanel>
+    </Grid>
+</UserControl>

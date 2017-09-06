@@ -1,0 +1,30 @@
+﻿<Window x:Class="ZUtility.View.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About" Height="500" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Column="0" Grid.Row="0">Application Name:</Label>
+        <Label Grid.Column="1" Grid.Row="0">ZUtility</Label>
+        <Label Grid.Column="0" Grid.Row="1">Version:</Label>
+        <Label Grid.Column="1" Grid.Row="1">1.0</Label>
+        <GroupBox Header="Log" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2">
+            <DockPanel LastChildFill="True">
+                <Label DockPanel.Dock="Top" Name="lbLogFileName" Content="{Binding Path=LogFileName}"></Label>
+                <Button DockPanel.Dock="Bottom" Margin="2" Padding="2" HorizontalAlignment="Center" Command="{Binding RefreshCommand}">Refresh</Button>
+                <ScrollViewer>
+                    <TextBox Name="txtLog" Text="{Binding Path=LogContent}"/>
+                </ScrollViewer>
+            </DockPanel>
+        </GroupBox>
+    </Grid>
+</Window>

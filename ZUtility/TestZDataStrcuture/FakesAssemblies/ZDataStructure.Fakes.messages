@@ -1,0 +1,7 @@
+C:\Z\ZUtility\TestZDataStrcuture\Fakes\ZDataStructure.fakes : warning : Cannot generate stub for ZDataStructure.Search`1: type is sealed.
+C:\Z\ZUtility\TestZDataStrcuture\Fakes\ZDataStructure.fakes : warning : Cannot generate stub for ZDataStructure.Runner: type is not visible to exported or assembly(ZDataStructure.Fakes).
+C:\Z\ZUtility\TestZDataStrcuture\Fakes\ZDataStructure.fakes : warning : Cannot generate stub for ZDataStructure.Sort: type is not visible to exported or assembly(ZDataStructure.Fakes).
+C:\Z\ZUtility\TestZDataStrcuture\Fakes\ZDataStructure.fakes : warning : Cannot generate stub for <PrivateImplementationDetails>{51526FAC-E560-4AF6-8647-C5C0B315E9D5}: type is not supported because of internal limitations.
+C:\Z\ZUtility\TestZDataStrcuture\Fakes\ZDataStructure.fakes : warning : Cannot generate shim for ZDataStructure.Runner: type is not visible to exported or assembly(ZDataStructure.Fakes).
+C:\Z\ZUtility\TestZDataStrcuture\Fakes\ZDataStructure.fakes : warning : Cannot generate shim for ZDataStructure.Sort: type is not visible to exported or assembly(ZDataStructure.Fakes).
+C:\Z\ZUtility\TestZDataStrcuture\Fakes\ZDataStructure.fakes : warning : Cannot generate shim for <PrivateImplementationDetails>{51526FAC-E560-4AF6-8647-C5C0B315E9D5}: type is not supported because of internal limitations.

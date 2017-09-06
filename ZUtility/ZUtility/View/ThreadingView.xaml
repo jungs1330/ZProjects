@@ -1,0 +1,57 @@
+﻿<UserControl x:Class="ZUtility.View.ThreadingView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:System="clr-namespace:System;assembly=mscorlib"
+             xmlns:vm="clr-namespace:ZUtility.ViewModel"
+             xmlns:conv="clr-namespace:ZUtility.Converter"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="500">
+    <UserControl.Resources>
+        <Style x:Key="BigFontButtonStyle">
+            <Setter Property="Control.FontFamily" Value="Times New Roman" />
+            <Setter Property="Control.FontSize" Value="14" />
+            <Setter Property="Control.FontWeight" Value="Bold" />
+        </Style>
+        <conv:RadioButtonCheckedConverter x:Key="RadioButtonCheckedConverter" />
+        <ObjectDataProvider x:Key="OrderByOptions" MethodName="GetValues"
+                            ObjectType="{x:Type System:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="vm:OrderByOptions"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+        <ObjectDataProvider x:Key="OrderByDirectionOptions" MethodName="GetValues"
+                            ObjectType="{x:Type System:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="vm:OrderByDirectionOptions"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Grid.Column="0" Grid.Row="0">Input: </TextBlock>
+        <TextBox Grid.Column="1" Grid.Row="0" Width="100" Text="{Binding Path=Input}"></TextBox>
+        <ComboBox Grid.Column="2" Grid.Row="0" Width="200" ItemsSource="{Binding ThreadMethods}" SelectedValue="{Binding Path=ThreadMethod}"/>
+
+        <Button Grid.Column="3" Grid.Row="0" Command="{Binding StartCommand}">Start</Button>
+        <Button Grid.Column="4" Grid.Row="0" Command="{Binding StopCommand}">Stop</Button>
+        <Button Grid.Column="5" Grid.Row="0" Command="{Binding ClearCommand}">Clear</Button>
+        <Border BorderThickness="2" Grid.Column="0" Grid.ColumnSpan="7" Grid.Row="1" BorderBrush="Red">
+            <TextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="#FFC73131" Text="{Binding Path=Output}" IsReadOnly="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        </Border>
+    </Grid>
+</UserControl>
