@@ -501,23 +501,28 @@ namespace ZUtility.ViewModel
                         Dictionary<string, int> fileNameCounter = new Dictionary<string, int>();
                         Parallel.ForEach(list, file =>
                         {
+                            //file.NewName = this.FileRenameTo
+                            //        .Replace("[YYYY]", file.LastWriteTime.Year.ToString())
+                            //        .Replace("[MM]", file.LastWriteTime.Month.ToString("D2"))
+                            //        .Replace("[DD]", file.LastWriteTime.Day.ToString("D2")) + file.Extension;
+
                             file.NewName = this.FileRenameTo
-                                    .Replace("[YYYY]", file.LastWriteTime.Year.ToString())
-                                    .Replace("[MM]", file.LastWriteTime.Month.ToString("D2"))
-                                    .Replace("[DD]", file.LastWriteTime.Day.ToString("D2")) + file.Extension;
+                                    .Replace("[YYYY]", file.DateTaken.Year.ToString())
+                                    .Replace("[MM]", file.DateTaken.Month.ToString("D2"))
+                                    .Replace("[DD]", file.DateTaken.Day.ToString("D2")) + file.Extension;
 
                             int count = 1;
 
                             lock (fileNameCounter)
                             {
-                                if (fileNameCounter.ContainsKey(file.NewName))
+                                if (fileNameCounter.ContainsKey(file.NewName.ToLower()))
                                 {
-                                    count = fileNameCounter[file.NewName] + 1;
-                                    fileNameCounter[file.NewName] = count;
+                                    count = fileNameCounter[file.NewName.ToLower()] + 1;
+                                    fileNameCounter[file.NewName.ToLower()] = count;
                                 }
                                 else
                                 {
-                                    fileNameCounter.Add(file.NewName, count);
+                                    fileNameCounter.Add(file.NewName.ToLower(), count);
                                 }
                             }
 
